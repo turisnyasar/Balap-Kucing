@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Balap Kucing</title>
+	<link type='text/css' rel='stylesheet' href='style.css'/>
+
+</head>
+
+<body>
+
+<div id='select_screen'>
+
+<div id='select_dialog'>
+ 	<h1>Pilih kucingmu</h2>
+  <div id='dialog_content'></div>
+</div>
+</div>
+
+<div id='play_screen'>
+
+<div id='info'>...siap-siap...</div>
+<div id='arena'>
+<div id='road1' class='road'></div>
+<div id='road2' class='road'></div>
+<div id='road3' class='road'></div>
+<div id='road4' class='road'></div>
+</div>
+<div id='cat1' class='cat'>
+	<img id='cat1_img' src='kuro.gif' />
+	<p id='cat1_info'>nama<br/>000</p>
+	</div>
+<div id='cat2' class='cat'>
+	<img id='cat2_img' src='kuro.gif' />
+	<p id='cat2_info'>nama<br/>000</p>
+	</div>
+<div id='cat3' class='cat'>
+	<img id='cat3_img' src='kuro.gif' />
+	<p id='cat3_info'>nama<br/>000</p>
+	</div>
+<div id='cat4' class='cat'>
+	<img id='cat4_img' src='kuro.gif' />
+	<p id='cat4_info'>nama<br/>000</p>
+	</div>
+
+<table width='800' cellspacing='0'>
+
+	<tr>
+		<td width='60%'>
+			<div id='cat1_skor' class='skor'>0</div>
+			<div id='cat2_skor' class='skor'>0</div>
+			<div id='cat3_skor' class='skor'>0</div>
+			<div id='cat4_skor' class='skor'>0</div>
+		</td>
+		<td width='40%' align='center'>
+			<div id='infoNomor'>Lomba #1</div>
+			<input type='button' id='btnMulai' onclick='mulai()' value='Mulai' />
+			<input type='button' id='btnUlang' onclick='ulangi()' value='Ulangi' />
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan='2' align='center'>
+			<h2>Riwayat Lomba</h2>
+			<div id='riwayatLomba'></div>
+		</td>
+	</tr>
+</table>
+</div>
+
+</body>
+
+</html>
+	<script src='functions.js'></script>
+	<script src='cat.js'></script>
+	<script src='main.js'></script>

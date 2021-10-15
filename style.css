@@ -1,0 +1,95 @@
+
+* { margin:0; padding:0; font-family:"Arial";  font-size:1em; }
+
+html { height:100%; }
+
+body { min-height:100%; }
+
+#select_screen {
+ width:100%;
+ min-height:200%;
+ position:absolute;
+ background:url(speed.gif);
+ background-size: cover;
+ z-index: 1000;
+ display:flex;
+ justify-content: center;
+}
+
+#select_dialog {
+ width:90%;
+ height:350px;
+ margin-top:50px;
+ padding:20px;
+ background:rgba(255,255,255,0.8);
+ border-radius:50px;
+}
+
+#select_dialog h1 { 
+font-family:Impact;
+text-align:center;
+font-size:2rem;
+padding:0 0 20px 0;
+}
+
+#dialog_content {
+ display:flex;
+ justify-content: space-around;
+}
+
+.kotak { border:3px solid black; 
+        width:230px;
+        height:200px; 
+        text-align:center; 
+        padding:10px;
+        border-radius:20px;
+        background:white;
+        box-shadow:3px 3px 3px grey;
+        cursor:pointer;
+ }
+
+.kotak h1 { font-size:2rem; 
+        font-weight:bold;
+        font-family:Impact; 
+} 
+
+.teks { text-align: left; line-height: 2rem;}
+
+#play_screen {
+ position:absolute;
+ z-index: 100;
+}
+
+#info { height:100px; font-size:3em; color:red; }
+#arena { margin-left:100px;  width:900px; }
+.road { width:800px; height:60px; transform:skew(-25deg); }
+#road1 { background-color:rgb(248, 114, 114); margin-left:90px; }
+#road2 { background-color:rgb(123, 245, 123); margin-left:60px; }
+#road3 { background-color:rgb(255, 194, 80); margin-left:30px; }
+#road4 { background-color:rgb(198, 209, 255); }
+
+.cat { position:absolute; z-index: 110;}
+
+.cat p { position:absolute;  top:0%; left:80%; font-size:0.9em; 
+        background-color:rgb(255, 255, 138); padding:5px; 
+        white-space:nowrap; border-radius:10px; 
+        box-shadow:2px 2px 2px rgba(0,0,0,0.4);
+        z-index: 120; }
+
+#cat1 { top:70px; left:960px; }
+#cat2 { top:130px; left:930px; }
+#cat3 { top:190px; left:900px; }
+#cat4 { top:250px; left:870px; }
+
+table { margin-top:10px; margin-left:100px; border:3px solid black; 
+        border-radius:20px; box-shadow:5px 5px 5px black; }
+		
+input[type=button] { padding:20px; margin:10px; background-color:cyan;}
+input:disabled { background-color:#aaa; }
+
+.skor { font-size:2em; }
+#infoNomor { text-align: center; font-size:2em; color:red; font-weight:bold; 
+        background-color:rgb(255, 252, 95); border:1px solid #444; border-radius:10px; 
+        width:200px;
+        }
+h2 { background-color:rgb(144, 255, 99); font-size:1.5em; }
